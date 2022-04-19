@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #545252;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.header_fixed{
+    /* height: 800px; */
+    margin-top: 60px;
+    overflow: auto;
+    border: 1px solid #dddddd;
+
+}
+
+.header_fixed thead th{
+    position: sticky;
+    font-size: 18px;
+    font-weight: bold;
+    top: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+th,td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+td img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #2d2c2c;
+
+}
+tr:nth-child(odd){
+    background: #dddddd;
+}
+
+tr:nth-child(even){
+    background: #f1eded;
+}
+
+::-webkit-scrollbar{
+   width: 9px;
+}
+
+
+tr:hover td{
+    color: #2020b7;
+    cursor: pointer;
+    background: #fff;
+}
+
+td button{
+    border: none;
+    color: #fff;
+    background: #000;
+    padding: 6px 8px;
+    cursor: pointer;
+}
+::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0 , 0, 0.5);
+}
+::-webkit-scrollbar-thumb{
+    -webkit-box-shadow: inset 0 0 7px rgba(0, 0 , 0, 0.5);
+}
